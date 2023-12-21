@@ -13,6 +13,14 @@
   --sizepx-10: 10px !important;
   --fullsize-100: 100% !important;
 }
+
+h1 {
+  font-size: 20px !important;
+  font-weight: bolder;
+}
+h4 {
+  font-size: 16px !important;
+}
 ul {
   list-style: none;
   padding: 0;
@@ -85,7 +93,8 @@ body {
   border-radius: var(--sizepx-10);
   opacity: 0.4;
 }
-ol, ul{
+ol,
+ul {
   padding: 0 !important;
 }
 .all-sections .left-section .img-text h2 {
@@ -200,6 +209,24 @@ ol, ul{
   transition: 1.5s;
   margin-bottom: 20px;
 }
+.right-section .box .card span {
+  background-color: rgb(57, 174, 169);
+  font-weight: 500;
+  cursor: text;
+}
+#skil-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+#skil-box .card {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 .right-section .box p {
   color: var(--text-color);
   font-size: 20px;
@@ -211,12 +238,12 @@ ol, ul{
   display: var(--main-flex);
   align-items: var(--align-items);
 }
-@media(max-width:450px) {
+@media (max-width: 450px) {
   .right-section .box .date,
-.right-section .right-down .box1 .date{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+  .right-section .right-down .box1 .date {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 .right-section .box .date i,
 .right-section .right-down .box1 .date i {
@@ -236,7 +263,6 @@ ol, ul{
   padding: 10px;
   border-radius: 6px;
   margin-left: 2px;
-
 }
 .right-section .right-down .down-header {
   display: var(--main-flex);
@@ -264,14 +290,13 @@ ol, ul{
   background-color: rgba(238, 230, 230, 0.228);
   margin-right: 10px;
 }
-@media(max-width:450px){
-  .right-section .right-down .box1 .date{
+@media (max-width: 450px) {
+  .right-section .right-down .box1 .date {
     display: flex;
     flex-wrap: wrap;
   }
-  .right-section .right-down .box1 .date a::nth-child(2){
+  .right-section .right-down .box1 .date a::nth-child(2) {
     margin-top: 100px;
-
   }
 }
 .right-section .right-down .box1 .date a:hover {
